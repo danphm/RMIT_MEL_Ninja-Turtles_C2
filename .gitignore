@@ -1,0 +1,25 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Secrets — operator credentials NEVER belong in the repo (AP-41).
+.env
+.env.local
+.env.*.local
+
+# Local TideCloak state and fetched pack files
+data/tidecloak.json
+data/keycloakdb*
+.tide-pack/
+
+# App data
+prisma/*.db
+prisma/*.db-journal
+storage/
+data/*.db
+data/*.db-*
+data/init.log
+branding/
+data/invite.txt
